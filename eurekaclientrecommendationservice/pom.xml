@@ -45,12 +45,12 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.10</version>
 		</dependency>
-
 		<dependency>
 			<groupId>cn.guangzhou.shiyu</groupId>
 			<artifactId>eurekaclientservice</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -70,9 +70,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<includeSystemScope>true</includeSystemScope>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
