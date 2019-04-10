@@ -56,10 +56,11 @@
 
 	<build>
 		<plugins>
+			<!--这里如果也打成可执行jar的话就不能被其他包引用
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 

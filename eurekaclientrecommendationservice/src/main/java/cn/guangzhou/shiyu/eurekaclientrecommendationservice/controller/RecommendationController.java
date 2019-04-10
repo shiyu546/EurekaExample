@@ -17,7 +17,11 @@ public class RecommendationController {
     @RequestMapping(value = "/recommendations",method = RequestMethod.GET)
     @ResponseBody
     public Movie[] recommendations(){
-        Movie[] results=restTemplate.getForObject("http://movie-service/movies",Movie[].class);
+        //服务注册与发现
+        //Movie[] results=restTemplate.getForObject("http://movie-service/movies",Movie[].class);
+
+        //ribbon客户端负载均衡
+        Movie[] results=restTemplate.getForObject("http://say-Hello/movies",Movie[].class);
         return results;
     }
 }
